@@ -36,7 +36,8 @@ def render_target_panel(target: PriceTarget):
         """, unsafe_allow_html=True)
 
     with col2:
-        rr = target.risk_reward_ratio
+        rr = getattr(target, 'risk_reward_ratio', 0)
+        rr_lbl = getattr(target, 'rr_label', '산출 불가')
         color = _rr_color(rr)
         rr_display = f"1:{rr:.1f}" if rr > 0 else "-"
         st.markdown(f"""
@@ -47,7 +48,7 @@ def render_target_panel(target: PriceTarget):
                 {rr_display}
             </div>
             <div style="color:#666; font-size:11px; margin-top:5px;">
-                [{target.rr_label}]
+                [{rr_lbl}]
             </div>
         </div>
         """, unsafe_allow_html=True)
