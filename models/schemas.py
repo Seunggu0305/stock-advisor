@@ -166,6 +166,8 @@ class MomentumFactorResult(BaseModel):
     momentum_score: float = 50.0
     rank_label: str = "보통"
     score: float = 50.0
+    deceleration_detected: bool = False
+    bottoming_detected: bool = False
 
 
 class SectorRelativeResult(BaseModel):

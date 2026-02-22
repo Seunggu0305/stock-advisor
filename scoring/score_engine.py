@@ -120,14 +120,74 @@ def calculate_total_score(all_results: dict) -> float:
 
 
 def _apply_dynamic_adjustment(base_score: float, all_results: dict) -> float:
-    """시장 상황에 따른 동적 조정"""
+    """시장 상황에 따른 동적 조정 - 선행지표 수렴/과매수 감점"""
     score = base_score
 
-    # VIX > 30일 때 과매도 보너스
     macro = all_results.get("macro")
-    if macro and macro.vix.value > 30:
-        mr = all_results.get("mean_reversion")
+    mr = all_results.get("mean_reversion")
+    rd = all_results.get("rsi_divergence")
+    bs = all_results.get("bb_squeeze")
+    momentum = all_results.get("momentum")
+    trend = all_results.get("trend")
+    volume = all_results.get("volume")
+    options = all_results.get("options_flow")
+    ss = all_results.get("short_squeeze")
+    mf = all_results.get("momentum_factor")
+
+    # 1) 극단적 공포 + 과매도 보너스
+    if macro and hasattr(macro, 'vix') and macro.vix.value > 30:
         if mr and mr.z_score < -1.5:
-            score += 5  # 극단적 공포 + 과매도 = 역발상 보너스
+            score += 5
+        if mr and mr.z_score < -2.0 and rd and rd.divergence_type and "강세" in rd.divergence_type:
+            score += 3
+
+    # 2) 선행 신호 수렴 보너스
+    leading_bullish = 0
+    if mr and mr.z_score < -1.0:
+        leading_bullish += 1
+    if rd and rd.divergence_type and "강세" in rd.divergence_type:
+        leading_bullish += 1
+    if bs and bs.is_squeezing and bs.expected_direction == "상승":
+        leading_bullish += 1
+    if options and options.put_call_ratio > 1.2:
+        leading_bullish += 1
+    if momentum and momentum.rsi < 35:
+        leading_bullish += 1
+
+    if leading_bullish >= 4:
+        score += 7
+    elif leading_bullish >= 3:
+        score += 4
+
+    # 3) 모멘텀 소진 감점
+    if momentum and momentum.rsi > 70:
+        if mf and mf.deceleration_detected:
+            score -= 5
+        if trend and trend.adx > 40:
+            score -= 2
+
+    # 4) 과매수 수렴 감점
+    overbought = 0
+    if momentum and momentum.rsi > 70:
+        overbought += 1
+    if mr and mr.z_score > 1.5:
+        overbought += 1
+    if trend and trend.score > 85:
+        overbought += 1
+    if options and options.put_call_ratio < 0.5:
+        overbought += 1
+
+    if overbought >= 3:
+        score -= 5
+
+    # 5) 장기 BB스퀴즈 + OBV 건전 → 돌파 임박
+    if bs and bs.is_squeezing and bs.squeeze_duration >= 8:
+        if volume and volume.obv_label != "약함":
+            score += 3
+
+    # 6) 숏스퀴즈 셋업 보너스
+    if ss and ss.short_interest_pct > 15:
+        if leading_bullish >= 2:
+            score += 3
 
     return score
