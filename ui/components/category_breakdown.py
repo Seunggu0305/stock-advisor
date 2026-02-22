@@ -192,7 +192,7 @@ def _build_categories(result: StockAnalysisResult) -> list[dict]:
                  "tooltip": "가격이 SMA50에서 얼마나 벗어났는지 표준편차로 측정합니다. Z < -2 강한 과매도(매수 기회), Z > 2 강한 과매수(주의) 신호입니다."},
                 {"name": "모멘텀 팩터", "score": result.momentum_factor.score,
                  "label": result.momentum_factor.rank_label,
-                 "tooltip": "퀀트 전략의 12-1 모멘텀: 12개월 수익률에서 최근 1개월을 제외합니다. 단기 반전 효과를 배제한 중장기 모멘텀을 측정합니다."},
+                 "tooltip": "모멘텀 가속/감속을 감지합니다. 하락세가 둔화(바닥 형성)되면 높은 점수, 상승세가 둔화(모멘텀 소진)되면 낮은 점수를 부여합니다."},
                 {"name": "섹터 상대강도", "score": result.sector_relative.score,
                  "label": f"{result.sector_relative.sector_name} ({result.sector_relative.sector_rank}/{result.sector_relative.total_sectors}위)",
                  "tooltip": "11개 GICS 섹터 ETF의 1개월 수익률 순위에서 해당 종목 섹터의 위치입니다. 상위 섹터 종목일수록 유리합니다."},

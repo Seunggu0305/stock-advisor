@@ -8,14 +8,14 @@ def calculate_total_score(all_results: dict) -> float:
 
     category_scores = {}
 
-    # 1. 매크로 환경 (10%)
+    # 1. 매크로 환경 (8%)
     macro = all_results.get("macro")
     if macro:
         category_scores["macro"] = macro.score
     else:
         category_scores["macro"] = 50.0
 
-    # 2. 추세/모멘텀 (25%)
+    # 2. 추세/모멘텀 (15%)
     trend = all_results.get("trend")
     momentum = all_results.get("momentum")
     ichimoku = all_results.get("ichimoku")
@@ -31,7 +31,7 @@ def calculate_total_score(all_results: dict) -> float:
         ichi_score * sw["ichimoku"]
     )
 
-    # 3. 거래량/수급 (20%)
+    # 3. 거래량/수급 (13%)
     volume = all_results.get("volume")
     inst_flow = all_results.get("institutional_flow")
     options = all_results.get("options_flow")
@@ -47,7 +47,7 @@ def calculate_total_score(all_results: dict) -> float:
         opt_score * sw["options_flow"]
     )
 
-    # 4. 패턴/구조 (20%)
+    # 4. 패턴/구조 (17%)
     wave = all_results.get("wave")
     fvg = all_results.get("fvg")
     fib = all_results.get("fibonacci")
@@ -63,7 +63,7 @@ def calculate_total_score(all_results: dict) -> float:
         (candle.score if candle else 50) * sw["candlestick"]
     )
 
-    # 5. 퀀트 팩터 (15%)
+    # 5. 퀀트 팩터 (22%)
     mr = all_results.get("mean_reversion")
     mf = all_results.get("momentum_factor")
     sr = all_results.get("sector_relative")
@@ -81,7 +81,7 @@ def calculate_total_score(all_results: dict) -> float:
         (bs.score if bs else 50) * sw["bb_squeeze"]
     )
 
-    # 6. 리스크/특수 (10%)
+    # 6. 리스크/특수 (12%)
     ss = all_results.get("short_squeeze")
     cp = all_results.get("complex_patterns")
 
@@ -100,7 +100,7 @@ def calculate_total_score(all_results: dict) -> float:
         (cp.score if cp else 50) * sw["complex_patterns"]
     )
 
-    # 7. 펀더멘털 (10%)
+    # 7. 펀더멘털 (13%)
     fundamental = all_results.get("fundamental")
     if fundamental:
         category_scores["fundamental"] = fundamental.score
