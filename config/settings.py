@@ -3,7 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-FRED_API_KEY = os.getenv("FRED_API_KEY", "")
+try:
+    import streamlit as st
+    FRED_API_KEY = st.secrets.get("FRED_API_KEY", os.getenv("FRED_API_KEY", ""))
+except Exception:
+    FRED_API_KEY = os.getenv("FRED_API_KEY", "")
 
 # Cache TTL (seconds)
 CACHE_TTL_MACRO = 3600       # 1 hour
