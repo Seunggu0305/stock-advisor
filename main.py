@@ -104,10 +104,11 @@ def run_analysis(ticker: str) -> StockAnalysisResult:
     all_results["special_signals"] = special
 
     # 3. 스코어링
+    targets = calculate_targets(price_data, fib, fvg, vol)
+    all_results["price_target"] = targets
     ai_score = calculate_total_score(all_results)
     grade = get_grade(ai_score)
     final_signal = compose_signal(ai_score, grade, all_results)
-    targets = calculate_targets(price_data, fib, fvg, vol)
     alerts = generate_alerts(all_results, current_price)
 
     # 4. 결과 조립

@@ -138,8 +138,8 @@ def _run_screening(index_name: str):
 def _render_top5_table(results: list[dict]):
     """Top 5 결과를 테이블로 렌더링"""
     # 헤더
-    header_cols = st.columns([0.5, 1, 2.5, 1.2, 1, 1.2, 1.5, 1.5])
-    headers = ["#", "등급", "종목", "점수", "RSI", "주간", "목표가", "최종 신호"]
+    header_cols = st.columns([0.5, 1, 2.5, 1.2, 1, 1.2, 1, 1.5])
+    headers = ["#", "등급", "종목", "점수", "RSI", "주간", "손익비", "최종 신호"]
     for col, header in zip(header_cols, headers):
         with col:
             st.markdown(f"<span style='color:#888; font-size:11px; font-weight:bold;'>{header}</span>",
@@ -152,7 +152,7 @@ def _render_top5_table(results: list[dict]):
         score_color = _score_to_color(r["score"])
         weekly_color = "#26a69a" if r.get("weekly_pct", 0) >= 0 else "#ef5350"
 
-        row_cols = st.columns([0.5, 1, 2.5, 1.2, 1, 1.2, 1.5, 1.5])
+        row_cols = st.columns([0.5, 1, 2.5, 1.2, 1, 1.2, 1, 1.5])
 
         with row_cols[0]:
             medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(r["rank"], f" {r['rank']}")
@@ -186,8 +186,17 @@ def _render_top5_table(results: list[dict]):
                        unsafe_allow_html=True)
 
         with row_cols[6]:
-            target_pct = r.get("target_pct", 0)
-            st.markdown(f"<span style='color:#26a69a; font-size:12px;'>▲{target_pct:.1f}%</span>",
+            rr = r.get("risk_reward_ratio", 0)
+            if rr >= 3.0:
+                rr_color = "#26a69a"
+            elif rr >= 2.0:
+                rr_color = "#66bb6a"
+            elif rr >= 1.0:
+                rr_color = "#ffa726"
+            else:
+                rr_color = "#ef5350"
+            rr_text = f"1:{rr:.1f}" if rr > 0 else "-"
+            st.markdown(f"<span style='color:{rr_color}; font-size:12px;'>{rr_text}</span>",
                        unsafe_allow_html=True)
 
         with row_cols[7]:

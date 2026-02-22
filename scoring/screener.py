@@ -50,6 +50,7 @@ def screen_index(index_name: str, top_n: int = 5, max_workers: int = 4,
                 "target_pct": result.price_target.target_pct,
                 "stop_loss": result.price_target.stop_loss,
                 "stop_loss_pct": result.price_target.stop_loss_pct,
+                "risk_reward_ratio": result.price_target.risk_reward_ratio,
             }
         except Exception as e:
             print(f"  [스킵] {ticker}: {e}")

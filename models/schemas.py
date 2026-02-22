@@ -234,6 +234,8 @@ class PriceTarget(BaseModel):
     stop_loss: float = 0.0
     stop_loss_pct: float = 0.0
     support_1: float = 0.0
+    risk_reward_ratio: float = 0.0
+    rr_label: str = "산출 불가"
 
 
 # ── Final Composite ──

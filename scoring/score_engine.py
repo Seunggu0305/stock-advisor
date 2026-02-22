@@ -190,4 +190,15 @@ def _apply_dynamic_adjustment(base_score: float, all_results: dict) -> float:
         if leading_bullish >= 2:
             score += 3
 
+    # 7) 손익비(R:R) 보너스/감점
+    pt = all_results.get("price_target")
+    if pt and hasattr(pt, 'risk_reward_ratio') and pt.risk_reward_ratio > 0:
+        rr = pt.risk_reward_ratio
+        if rr >= 3.0:
+            score += 5   # 손익비 3:1 이상 → 매우 유리한 진입점
+        elif rr >= 2.0:
+            score += 3   # 손익비 2:1 이상 → 유리
+        elif rr < 0.8:
+            score -= 3   # 손익비 0.8:1 미만 → 불리한 진입점
+
     return score

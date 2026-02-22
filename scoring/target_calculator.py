@@ -91,6 +91,26 @@ def calculate_targets(
     # 1차 지지
     support_1 = max([s for s in stop_candidates if s < current], default=stop_loss)
 
+    # ── 손익비 (Risk/Reward Ratio) 계산 ──
+    potential_gain = target_price - current   # 목표가까지 상승 여력
+    potential_loss = current - stop_loss      # 손절가까지 하락 위험
+
+    if potential_loss > 0:
+        rr_ratio = round(potential_gain / potential_loss, 2)
+    else:
+        rr_ratio = 0.0
+
+    if rr_ratio >= 3.0:
+        rr_label = "매우 유리"
+    elif rr_ratio >= 2.0:
+        rr_label = "유리"
+    elif rr_ratio >= 1.0:
+        rr_label = "보통"
+    elif rr_ratio > 0:
+        rr_label = "불리"
+    else:
+        rr_label = "산출 불가"
+
     return PriceTarget(
         target_price=round(target_price, 2),
         target_pct=round(target_pct, 1),
@@ -98,4 +118,6 @@ def calculate_targets(
         stop_loss=round(stop_loss, 2),
         stop_loss_pct=round(stop_loss_pct, 1),
         support_1=round(support_1, 2),
+        risk_reward_ratio=rr_ratio,
+        rr_label=rr_label,
     )
