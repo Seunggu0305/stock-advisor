@@ -98,7 +98,7 @@ with tab_analysis:
     with col2:
         analyze_btn = st.button("🔍 분석 시작", use_container_width=True)
 
-    if analyze_btn and ticker:
+    if (analyze_btn or ticker) and ticker:
         with st.spinner(f"{ticker.upper()} 분석 중... (데이터 수집 및 33개 지표 계산)"):
             try:
                 result = run_analysis(ticker)
