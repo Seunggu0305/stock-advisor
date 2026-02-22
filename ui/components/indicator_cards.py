@@ -17,7 +17,7 @@ def render_indicator_cards(result: StockAnalysisResult):
         {
             "title": "주간 성과 (1W)",
             "value": fmt_pct(result.weekly_performance_pct),
-            "color": "#00FF00" if result.weekly_performance_pct > 0 else "#FF4444",
+            "color": "#26a69a" if result.weekly_performance_pct > 0 else "#ef5350",
         },
         {
             "title": "파동",
@@ -102,7 +102,7 @@ def render_indicator_cards(result: StockAnalysisResult):
         {
             "title": "특수 신호",
             "value": ", ".join(result.special_signals) if result.special_signals else "없음",
-            "color": "#FFFF00" if result.special_signals else "#888",
+            "color": "#ffa726" if result.special_signals else "#888",
         },
         {
             "title": "복합 패턴",
@@ -115,7 +115,7 @@ def render_indicator_cards(result: StockAnalysisResult):
     st.markdown(f"""
     <div style="text-align:center; padding:15px; background:#1a1a2e; border-radius:8px;
                 border:2px solid {_score_color(result.ai_score)}; margin-bottom:15px;">
-        <span style="color:#FFD700; font-size:16px; font-weight:bold;">
+        <span style="color:#e0be36; font-size:16px; font-weight:bold;">
             최종 신호: {result.final_signal}
         </span>
     </div>
@@ -143,12 +143,12 @@ def render_indicator_cards(result: StockAnalysisResult):
 
 def _score_color(score: float) -> str:
     if score >= 70:
-        return "#00FF00"
+        return "#26a69a"
     elif score >= 55:
-        return "#7FFF00"
+        return "#66bb6a"
     elif score >= 45:
-        return "#FFFF00"
+        return "#ffa726"
     elif score >= 30:
-        return "#FFA500"
+        return "#ff7043"
     else:
-        return "#FF4444"
+        return "#ef5350"

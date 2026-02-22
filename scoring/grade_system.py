@@ -24,10 +24,10 @@ def get_grade_description(grade: Grade) -> str:
 
 def get_grade_color(grade: Grade) -> str:
     colors = {
-        Grade.A: "#00FF00",   # Green
-        Grade.B: "#7FFF00",   # Chartreuse
-        Grade.C: "#FFFF00",   # Yellow
-        Grade.D: "#FF8C00",   # Orange
-        Grade.F: "#FF0000",   # Red
+        Grade.A: "#26a69a",   # Teal
+        Grade.B: "#66bb6a",   # Green
+        Grade.C: "#ffa726",   # Amber
+        Grade.D: "#ff7043",   # Orange
+        Grade.F: "#ef5350",   # Red
     }
     return colors.get(grade, "#FFFFFF")

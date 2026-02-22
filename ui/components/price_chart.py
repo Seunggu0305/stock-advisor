@@ -28,14 +28,16 @@ def render_price_chart(df: pd.DataFrame, ticker: str):
             low=df_recent["Low"],
             close=df_recent["Close"],
             name=ticker,
-            increasing_line_color="#00FF00",
-            decreasing_line_color="#FF0000",
+            increasing_line_color="#26a69a",
+            decreasing_line_color="#ef5350",
+            increasing_fillcolor="#26a69a",
+            decreasing_fillcolor="#ef5350",
         ),
         row=1, col=1,
     )
 
     # 이동평균선
-    for period, color in [(20, "#FFD700"), (50, "#00BFFF"), (200, "#FF69B4")]:
+    for period, color in [(20, "#e0be36"), (50, "#42a5f5"), (200, "#ab47bc")]:
         if len(df) >= period:
             sma = df["Close"].rolling(period).mean()
             fig.add_trace(
@@ -49,7 +51,7 @@ def render_price_chart(df: pd.DataFrame, ticker: str):
             )
 
     # 볼륨
-    colors = ["#00FF00" if c >= o else "#FF0000"
+    colors = ["#26a69a" if c >= o else "#ef5350"
               for c, o in zip(df_recent["Close"], df_recent["Open"])]
     fig.add_trace(
         go.Bar(

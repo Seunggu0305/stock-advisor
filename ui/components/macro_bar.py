@@ -8,10 +8,10 @@ def render_macro_bar(macro: MacroResult):
     """매크로 환경 요약 바"""
     def status_color(status: MacroStatus) -> str:
         return {
-            MacroStatus.STABLE: "#00FF00",
-            MacroStatus.MIXED: "#FFFF00",
-            MacroStatus.CAUTION: "#FFA500",
-            MacroStatus.DANGER: "#FF0000",
+            MacroStatus.STABLE: "#26a69a",
+            MacroStatus.MIXED: "#ffa726",
+            MacroStatus.CAUTION: "#ff7043",
+            MacroStatus.DANGER: "#ef5350",
         }.get(status, "#FFFFFF")
 
     items = [macro.interest_rate, macro.vix, macro.oil, macro.gold]

@@ -39,17 +39,17 @@ st.markdown("""
     }
     .stButton > button {
         background-color: #1a1a2e;
-        color: #FFD700;
-        border: 1px solid #FFD700;
+        color: #e0be36;
+        border: 1px solid #e0be36;
         font-size: 16px;
         width: 100%;
     }
     .stButton > button:hover {
-        background-color: #FFD700;
+        background-color: #e0be36;
         color: #0d1117;
     }
     div[data-testid="stMetricValue"] {
-        color: #FFD700;
+        color: #e0be36;
     }
     .block-container {
         padding-top: 1rem;
@@ -62,12 +62,12 @@ st.markdown("""
     }
     .stTabs [data-baseweb="tab"] {
         background-color: #1a1a2e;
-        color: #FFD700;
+        color: #e0be36;
         border-radius: 8px;
         padding: 10px 24px;
     }
     .stTabs [aria-selected="true"] {
-        background-color: #FFD700 !important;
+        background-color: #e0be36 !important;
         color: #0d1117 !important;
     }
 </style>
@@ -76,7 +76,7 @@ st.markdown("""
 # ── 헤더 ──
 st.markdown("""
 <div style="text-align:center; padding:10px;">
-    <h1 style="color:#FFD700; margin:0;">📊 Stock Advisor</h1>
+    <h1 style="color:#e0be36; margin:0;">📊 Stock Advisor</h1>
     <p style="color:#888; margin:0;">AI 기반 투자 진입 점수 분석</p>
 </div>
 """, unsafe_allow_html=True)
@@ -118,9 +118,9 @@ with tab_analysis:
         with left_col:
             st.markdown(f"""
             <div style="padding:10px;">
-                <h2 style="color:#00BFFF; margin:0;">{result.company_name}</h2>
-                <h3 style="color:#FFD700; margin:0;">{result.ticker} &nbsp;
-                    <span style="color:#{'00FF00' if result.weekly_performance_pct >= 0 else 'FF4444'};">
+                <h2 style="color:#42a5f5; margin:0;">{result.company_name}</h2>
+                <h3 style="color:#e0be36; margin:0;">{result.ticker} &nbsp;
+                    <span style="color:#{'26a69a' if result.weekly_performance_pct >= 0 else 'ef5350'};">
                         {fmt_price(result.current_price)} {fmt_pct(result.weekly_performance_pct)}
                     </span>
                 </h3>

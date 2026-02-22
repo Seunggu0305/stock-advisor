@@ -11,18 +11,18 @@ from models.schemas import Grade
 def _freshness_badge(saved: dict | None) -> str:
     """결과 신선도 배지 HTML 반환"""
     if not saved:
-        return '<span style="color:#FF4444; font-size:11px;">결과 없음</span>'
+        return '<span style="color:#ef5350; font-size:11px;">결과 없음</span>'
     try:
         saved_time = datetime.fromisoformat(saved["analysis_time"])
         hours_ago = (datetime.now() - saved_time).total_seconds() / 3600
         time_str = saved["analysis_time"][:16].replace("T", " ")
         if hours_ago < 24:
-            return f'<span style="color:#00FF00; font-size:11px;">오늘 {time_str}</span>'
+            return f'<span style="color:#26a69a; font-size:11px;">오늘 {time_str}</span>'
         elif hours_ago < 48:
-            return f'<span style="color:#FFFF00; font-size:11px;">어제 {time_str}</span>'
+            return f'<span style="color:#ffa726; font-size:11px;">어제 {time_str}</span>'
         else:
             days = int(hours_ago // 24)
-            return f'<span style="color:#FF8800; font-size:11px;">{days}일 전 {time_str}</span>'
+            return f'<span style="color:#ff7043; font-size:11px;">{days}일 전 {time_str}</span>'
     except Exception:
         return '<span style="color:#888; font-size:11px;">시간 불명</span>'
 
@@ -32,7 +32,7 @@ def render_screener_tab():
 
     st.markdown("""
     <div style="text-align:center; padding:10px;">
-        <h2 style="color:#FFD700; margin:0;">🏆 일일 Top 5 스크리너</h2>
+        <h2 style="color:#e0be36; margin:0;">🏆 일일 Top 5 스크리너</h2>
         <p style="color:#888;">매일 자동 갱신 | NASDAQ 100 · S&P 500 · Russell 2000</p>
         <p style="color:#666; font-size:11px;">자동 갱신: GitHub Actions (클라우드) 또는 작업 스케줄러 (로컬)</p>
     </div>
@@ -94,7 +94,7 @@ def render_screener_tab():
 
         st.markdown(f"""
         <div style="padding:10px 15px; background:#1a1a2e; border-radius:8px; margin-bottom:5px;">
-            <span style="color:#FFD700; font-size:18px; font-weight:bold;">
+            <span style="color:#e0be36; font-size:18px; font-weight:bold;">
                 📊 {index_name} Top 5
             </span>
             <span style="float:right;">
@@ -150,7 +150,7 @@ def _render_top5_table(results: list[dict]):
         grade = Grade(r["grade"])
         grade_color = get_grade_color(grade)
         score_color = _score_to_color(r["score"])
-        weekly_color = "#00FF00" if r.get("weekly_pct", 0) >= 0 else "#FF4444"
+        weekly_color = "#26a69a" if r.get("weekly_pct", 0) >= 0 else "#ef5350"
 
         row_cols = st.columns([0.5, 1, 2.5, 1.2, 1, 1.2, 1.5, 1.5])
 
@@ -165,9 +165,9 @@ def _render_top5_table(results: list[dict]):
 
         with row_cols[2]:
             st.markdown(
-                f"<div><span style='color:#00BFFF; font-weight:bold;'>{r['ticker']}</span> "
+                f"<div><span style='color:#42a5f5; font-weight:bold;'>{r['ticker']}</span> "
                 f"<span style='color:#888; font-size:11px;'>{r.get('name', '')[:20]}</span><br>"
-                f"<span style='color:#FFD700;'>{fmt_price(r['price'])}</span></div>",
+                f"<span style='color:#e0be36;'>{fmt_price(r['price'])}</span></div>",
                 unsafe_allow_html=True)
 
         with row_cols[3]:
@@ -177,7 +177,7 @@ def _render_top5_table(results: list[dict]):
 
         with row_cols[4]:
             rsi_val = r.get("rsi", 50)
-            rsi_color = "#FF4444" if rsi_val > 70 else ("#00FF00" if rsi_val < 30 else "#FFFF00")
+            rsi_color = "#ef5350" if rsi_val > 70 else ("#26a69a" if rsi_val < 30 else "#ffa726")
             st.markdown(f"<span style='color:{rsi_color};'>{rsi_val:.0f}</span>", unsafe_allow_html=True)
 
         with row_cols[5]:
@@ -187,12 +187,12 @@ def _render_top5_table(results: list[dict]):
 
         with row_cols[6]:
             target_pct = r.get("target_pct", 0)
-            st.markdown(f"<span style='color:#00FF00; font-size:12px;'>▲{target_pct:.1f}%</span>",
+            st.markdown(f"<span style='color:#26a69a; font-size:12px;'>▲{target_pct:.1f}%</span>",
                        unsafe_allow_html=True)
 
         with row_cols[7]:
             signal = r.get("signal", "")[:15]
-            st.markdown(f"<span style='color:#FFD700; font-size:11px;'>{signal}</span>",
+            st.markdown(f"<span style='color:#e0be36; font-size:11px;'>{signal}</span>",
                        unsafe_allow_html=True)
 
         # 구분선
@@ -201,11 +201,11 @@ def _render_top5_table(results: list[dict]):
 
 def _score_to_color(score: float) -> str:
     if score >= 80:
-        return "#00FF00"
+        return "#26a69a"
     elif score >= 65:
-        return "#7FFF00"
+        return "#66bb6a"
     elif score >= 45:
-        return "#FFFF00"
+        return "#ffa726"
     elif score >= 25:
-        return "#FFA500"
-    return "#FF4444"
+        return "#ff7043"
+    return "#ef5350"

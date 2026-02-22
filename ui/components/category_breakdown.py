@@ -13,7 +13,7 @@ def render_category_breakdown(result: StockAnalysisResult):
 
     st.markdown(
         '<div style="text-align:center;margin-bottom:16px;">'
-        '<h3 style="color:#FFD700;margin:0;">카테고리별 점수 분해</h3>'
+        '<h3 style="color:#e0be36;margin:0;">카테고리별 점수 분해</h3>'
         '<p style="color:#888;font-size:12px;margin:0;">각 카테고리와 하위 지표의 개별 점수 (0~100)</p>'
         '</div>',
         unsafe_allow_html=True,
@@ -52,7 +52,7 @@ details.ind-tip > summary {
 details.ind-tip > summary::-webkit-details-marker { display: none; }
 details.ind-tip > summary::marker { display: none; content: ""; }
 details.ind-tip[open] > summary {
-    background: #FFD700;
+    background: #e0be36;
     color: #0d1117;
 }
 details.ind-tip > .tip-content {
@@ -353,12 +353,12 @@ def _status_to_score(status: MacroStatus) -> float:
 
 def _score_color(score: float) -> str:
     if score >= 70:
-        return "#00FF00"
+        return "#26a69a"
     elif score >= 55:
-        return "#7FFF00"
+        return "#66bb6a"
     elif score >= 45:
-        return "#FFFF00"
+        return "#ffa726"
     elif score >= 30:
-        return "#FFA500"
+        return "#ff7043"
     else:
-        return "#FF4444"
+        return "#ef5350"

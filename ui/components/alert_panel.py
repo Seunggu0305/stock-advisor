@@ -11,10 +11,10 @@ def render_alert_panel(alerts: list[str]):
     alert_html = ""
     for alert in alerts:
         if alert.startswith("[!]"):
-            color = "#FFD700"
+            color = "#e0be36"
             icon = "⚠"
         else:
-            color = "#00BFFF"
+            color = "#42a5f5"
             icon = "ℹ"
 
         text = alert.replace("[!] ", "").replace("[i] ", "")

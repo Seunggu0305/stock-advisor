@@ -19,15 +19,15 @@ def render_score_card(ai_score: float, grade: Grade, previous_score: float | Non
 
     # 게이지 바 색상
     if ai_score >= 80:
-        bar_color = "#00FF00"
+        bar_color = "#26a69a"
     elif ai_score >= 65:
-        bar_color = "#7FFF00"
+        bar_color = "#66bb6a"
     elif ai_score >= 45:
-        bar_color = "#FFFF00"
+        bar_color = "#ffa726"
     elif ai_score >= 25:
-        bar_color = "#FF8C00"
+        bar_color = "#ff7043"
     else:
-        bar_color = "#FF0000"
+        bar_color = "#ef5350"
 
     st.markdown(f"""
     <div style="text-align:center; padding:20px; background:#0d1117; border-radius:10px; border:1px solid #333;">
