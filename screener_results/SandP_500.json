@@ -1,6 +1,6 @@
 {
   "index_name": "S&P 500",
-  "analysis_time": "2026-02-27T22:30:11.819757",
+  "analysis_time": "2026-03-01T22:29:49.455936",
   "total_analyzed": 503,
   "top_results": [
     {
@@ -17,14 +17,14 @@
       "target_pct": 30.4,
       "stop_loss": 140.84,
       "stop_loss_pct": -0.1,
-      "risk_reward_ratio": 268.04,
+      "risk_reward_ratio": 268.05,
       "rank": 1
     },
     {
       "ticker": "SYF",
       "name": "Synchrony Financial",
       "price": 69.11000061035156,
-      "score": 63.5,
+      "score": 63.4,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": 0.33,
@@ -38,38 +38,21 @@
       "rank": 2
     },
     {
-      "ticker": "WDAY",
-      "name": "Workday, Inc.",
-      "price": 133.75999450683594,
-      "score": 62.7,
-      "grade": "C",
-      "signal": "강력 바닥 (과매도)",
-      "weekly_pct": 3.52,
-      "trend": "강한 하락장",
-      "rsi": 28.7,
-      "target_price": 197.11,
-      "target_pct": 47.4,
-      "stop_loss": 127.45,
-      "stop_loss_pct": -4.7,
-      "risk_reward_ratio": 10.04,
-      "rank": 3
-    },
-    {
-      "ticker": "DHR",
-      "name": "Danaher Corporation",
-      "price": 210.63999938964844,
-      "score": 62.6,
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "price": 412.3699951171875,
+      "score": 62.8,
       "grade": "C",
       "signal": "FVG 지지 구간 도달",
-      "weekly_pct": -0.13,
-      "trend": "하락장",
-      "rsi": 39.7,
-      "target_price": 226.07,
-      "target_pct": 7.3,
-      "stop_loss": 207.43,
-      "stop_loss_pct": -1.5,
-      "risk_reward_ratio": 4.81,
-      "rank": 4
+      "weekly_pct": -2.04,
+      "trend": "강한 상승장",
+      "rsi": 55.0,
+      "target_price": 455.59,
+      "target_pct": 10.5,
+      "stop_loss": 402.94,
+      "stop_loss_pct": -2.3,
+      "risk_reward_ratio": 4.58,
+      "rank": 3
     },
     {
       "ticker": "WAT",
@@ -86,6 +69,23 @@
       "stop_loss": 311.77,
       "stop_loss_pct": -2.4,
       "risk_reward_ratio": 6.6,
+      "rank": 4
+    },
+    {
+      "ticker": "EFX",
+      "name": "Equifax, Inc.",
+      "price": 208.9600067138672,
+      "score": 62.5,
+      "grade": "C",
+      "signal": "중립 관망",
+      "weekly_pct": 10.9,
+      "trend": "보합",
+      "rsi": 56.9,
+      "target_price": 231.71,
+      "target_pct": 10.9,
+      "stop_loss": 207.58,
+      "stop_loss_pct": -0.7,
+      "risk_reward_ratio": 16.48,
       "rank": 5
     }
   ]

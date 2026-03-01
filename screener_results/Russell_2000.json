@@ -1,6 +1,6 @@
 {
   "index_name": "Russell 2000",
-  "analysis_time": "2026-02-27T22:37:34.341888",
+  "analysis_time": "2026-03-01T22:38:46.898338",
   "total_analyzed": 200,
   "top_results": [
     {
@@ -21,27 +21,10 @@
       "rank": 1
     },
     {
-      "ticker": "CMRE",
-      "name": "Costamare Inc.",
-      "price": 17.56999969482422,
-      "score": 63.5,
-      "grade": "C",
-      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
-      "weekly_pct": 4.77,
-      "trend": "상승장",
-      "rsi": 62.2,
-      "target_price": 18.99,
-      "target_pct": 8.1,
-      "stop_loss": 17.1,
-      "stop_loss_pct": -2.7,
-      "risk_reward_ratio": 3.02,
-      "rank": 2
-    },
-    {
       "ticker": "NATL",
       "name": "NCR Atleos Corporation",
       "price": 44.279998779296875,
-      "score": 63.1,
+      "score": 62.7,
       "grade": "C",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": 10.7,
@@ -49,25 +32,42 @@
       "rsi": 68.5,
       "target_price": 48.36,
       "target_pct": 9.2,
-      "stop_loss": 42.88,
-      "stop_loss_pct": -3.2,
-      "risk_reward_ratio": 2.9,
+      "stop_loss": 42.82,
+      "stop_loss_pct": -3.3,
+      "risk_reward_ratio": 2.79,
+      "rank": 2
+    },
+    {
+      "ticker": "PBI",
+      "name": "Pitney Bowes Inc.",
+      "price": 10.729999542236328,
+      "score": 62.2,
+      "grade": "C",
+      "signal": "중립 관망",
+      "weekly_pct": 4.24,
+      "trend": "상승장",
+      "rsi": 56.1,
+      "target_price": 11.37,
+      "target_pct": 6.0,
+      "stop_loss": 10.68,
+      "stop_loss_pct": -0.5,
+      "risk_reward_ratio": 12.53,
       "rank": 3
     },
     {
       "ticker": "LIND",
       "name": "Lindblad Expeditions Holdings I",
       "price": 19.709999084472656,
-      "score": 62.2,
+      "score": 62.0,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": -1.55,
       "trend": "강한 상승장",
       "rsi": 57.6,
       "target_price": 21.36,
-      "target_pct": 8.3,
-      "stop_loss": 18.07,
-      "stop_loss_pct": -8.3,
+      "target_pct": 8.4,
+      "stop_loss": 18.06,
+      "stop_loss_pct": -8.4,
       "risk_reward_ratio": 1.0,
       "rank": 4
     },
@@ -85,7 +85,7 @@
       "target_pct": 7.0,
       "stop_loss": 21.81,
       "stop_loss_pct": -0.5,
-      "risk_reward_ratio": 13.98,
+      "risk_reward_ratio": 13.99,
       "rank": 5
     }
   ]
