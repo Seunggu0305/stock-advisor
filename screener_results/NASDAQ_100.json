@@ -1,8 +1,25 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-03-06T22:22:39.126251",
+  "analysis_time": "2026-03-08T22:18:05.295405",
   "total_analyzed": 101,
   "top_results": [
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "price": 74.2699966430664,
+      "score": 65.4,
+      "grade": "B",
+      "signal": "FVG 지지 구간 도달",
+      "weekly_pct": -7.35,
+      "trend": "하락장",
+      "rsi": 30.5,
+      "target_price": 81.63,
+      "target_pct": 9.9,
+      "stop_loss": 71.55,
+      "stop_loss_pct": -3.7,
+      "risk_reward_ratio": 2.7,
+      "rank": 1
+    },
     {
       "ticker": "MNST",
       "name": "Monster Beverage Corporation",
@@ -18,7 +35,7 @@
       "stop_loss": 74.87,
       "stop_loss_pct": -1.0,
       "risk_reward_ratio": 5.57,
-      "rank": 1
+      "rank": 2
     },
     {
       "ticker": "NXPI",
@@ -30,12 +47,12 @@
       "weekly_pct": -10.24,
       "trend": "하락장",
       "rsi": 29.3,
-      "target_price": 226.93,
+      "target_price": 226.94,
       "target_pct": 12.5,
       "stop_loss": 201.41,
       "stop_loss_pct": -0.2,
-      "risk_reward_ratio": 75.85,
-      "rank": 2
+      "risk_reward_ratio": 75.89,
+      "rank": 3
     },
     {
       "ticker": "CTSH",
@@ -52,7 +69,7 @@
       "stop_loss": 64.56,
       "stop_loss_pct": -2.6,
       "risk_reward_ratio": 6.12,
-      "rank": 3
+      "rank": 4
     },
     {
       "ticker": "KLAC",
@@ -69,23 +86,6 @@
       "stop_loss": 1283.37,
       "stop_loss_pct": -4.6,
       "risk_reward_ratio": 3.81,
-      "rank": 4
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "price": 177.82000732421875,
-      "score": 61.9,
-      "grade": "C",
-      "signal": "스마트머니 매집 (OBV 강세 + 가격 횡보)",
-      "weekly_pct": -2.55,
-      "trend": "보합",
-      "rsi": 42.4,
-      "target_price": 189.91,
-      "target_pct": 6.8,
-      "stop_loss": 176.75,
-      "stop_loss_pct": -0.6,
-      "risk_reward_ratio": 11.3,
       "rank": 5
     }
   ]
