@@ -1,25 +1,8 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-03-13T22:24:03.903566",
+  "analysis_time": "2026-03-15T22:21:59.660626",
   "total_analyzed": 101,
   "top_results": [
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "price": 70.7699966430664,
-      "score": 68.4,
-      "grade": "B",
-      "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
-      "weekly_pct": -6.43,
-      "trend": "하락장",
-      "rsi": 28.5,
-      "target_price": 80.93,
-      "target_pct": 14.4,
-      "stop_loss": 70.01,
-      "stop_loss_pct": -1.1,
-      "risk_reward_ratio": 13.32,
-      "rank": 1
-    },
     {
       "ticker": "CTSH",
       "name": "Cognizant Technology Solutions ",
@@ -35,6 +18,23 @@
       "stop_loss": 60.04,
       "stop_loss_pct": -0.5,
       "risk_reward_ratio": 33.44,
+      "rank": 1
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "price": 70.7699966430664,
+      "score": 63.6,
+      "grade": "C",
+      "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
+      "weekly_pct": -6.43,
+      "trend": "하락장",
+      "rsi": 28.5,
+      "target_price": 80.93,
+      "target_pct": 14.4,
+      "stop_loss": 70.01,
+      "stop_loss_pct": -1.1,
+      "risk_reward_ratio": 13.32,
       "rank": 2
     },
     {
