@@ -1,47 +1,13 @@
 {
   "index_name": "S&P 500",
-  "analysis_time": "2026-03-20T22:29:39.649195",
+  "analysis_time": "2026-03-22T22:26:18.298576",
   "total_analyzed": 503,
   "top_results": [
-    {
-      "ticker": "VMC",
-      "name": "Vulcan Materials Company (Holdi",
-      "price": 258.3999938964844,
-      "score": 68.1,
-      "grade": "B",
-      "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
-      "weekly_pct": -2.84,
-      "trend": "하락장",
-      "rsi": 27.2,
-      "target_price": 293.36,
-      "target_pct": 13.5,
-      "stop_loss": 253.99,
-      "stop_loss_pct": -1.7,
-      "risk_reward_ratio": 7.93,
-      "rank": 1
-    },
-    {
-      "ticker": "NUE",
-      "name": "Nucor Corporation",
-      "price": 158.5800018310547,
-      "score": 67.5,
-      "grade": "B",
-      "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
-      "weekly_pct": -2.56,
-      "trend": "하락장",
-      "rsi": 28.5,
-      "target_price": 176.69,
-      "target_pct": 11.4,
-      "stop_loss": 154.47,
-      "stop_loss_pct": -2.6,
-      "risk_reward_ratio": 4.41,
-      "rank": 2
-    },
     {
       "ticker": "TROW",
       "name": "T. Rowe Price Group, Inc.",
       "price": 86.19000244140625,
-      "score": 67.0,
+      "score": 67.1,
       "grade": "B",
       "signal": "매수 고려",
       "weekly_pct": -1.36,
@@ -49,16 +15,16 @@
       "rsi": 32.0,
       "target_price": 95.22,
       "target_pct": 10.5,
-      "stop_loss": 84.43,
-      "stop_loss_pct": -2.0,
-      "risk_reward_ratio": 5.13,
-      "rank": 3
+      "stop_loss": 86.06,
+      "stop_loss_pct": -0.2,
+      "risk_reward_ratio": 69.47,
+      "rank": 1
     },
     {
       "ticker": "PKG",
       "name": "Packaging Corporation of Americ",
       "price": 202.72999572753906,
-      "score": 66.3,
+      "score": 66.4,
       "grade": "B",
       "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
       "weekly_pct": -5.69,
@@ -69,7 +35,7 @@
       "stop_loss": 195.07,
       "stop_loss_pct": -3.8,
       "risk_reward_ratio": 2.34,
-      "rank": 4
+      "rank": 2
     },
     {
       "ticker": "DG",
@@ -86,6 +52,40 @@
       "stop_loss": 121.24,
       "stop_loss_pct": -2.6,
       "risk_reward_ratio": 6.34,
+      "rank": 3
+    },
+    {
+      "ticker": "ACGL",
+      "name": "Arch Capital Group Ltd.",
+      "price": 92.30000305175781,
+      "score": 65.6,
+      "grade": "B",
+      "signal": "매수 고려",
+      "weekly_pct": -1.49,
+      "trend": "하락장",
+      "rsi": 33.9,
+      "target_price": 97.75,
+      "target_pct": 5.9,
+      "stop_loss": 90.5,
+      "stop_loss_pct": -2.0,
+      "risk_reward_ratio": 3.03,
+      "rank": 4
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporati",
+      "price": 181.4600067138672,
+      "score": 65.6,
+      "grade": "B",
+      "signal": "매수 고려",
+      "weekly_pct": 0.38,
+      "trend": "강한 하락장",
+      "rsi": 36.0,
+      "target_price": 214.84,
+      "target_pct": 18.4,
+      "stop_loss": 177.22,
+      "stop_loss_pct": -2.3,
+      "risk_reward_ratio": 7.87,
       "rank": 5
     }
   ]
