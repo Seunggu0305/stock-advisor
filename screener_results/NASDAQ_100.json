@@ -1,30 +1,13 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-04-10T22:31:25.306642",
+  "analysis_time": "2026-04-12T22:28:35.618038",
   "total_analyzed": 101,
   "top_results": [
-    {
-      "ticker": "CSCO",
-      "name": "Cisco Systems, Inc.",
-      "price": 82.22000122070312,
-      "score": 65.0,
-      "grade": "B",
-      "signal": "FVG 지지 구간 도달",
-      "weekly_pct": 2.21,
-      "trend": "상승장",
-      "rsi": 58.3,
-      "target_price": 87.72,
-      "target_pct": 6.7,
-      "stop_loss": 80.51,
-      "stop_loss_pct": -2.1,
-      "risk_reward_ratio": 3.21,
-      "rank": 1
-    },
     {
       "ticker": "AMAT",
       "name": "Applied Materials, Inc.",
       "price": 399.489990234375,
-      "score": 64.5,
+      "score": 64.0,
       "grade": "C",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": 13.29,
@@ -35,13 +18,13 @@
       "stop_loss": 391.0,
       "stop_loss_pct": -2.1,
       "risk_reward_ratio": 4.92,
-      "rank": 2
+      "rank": 1
     },
     {
       "ticker": "WDC",
       "name": "Western Digital Corporation",
       "price": 343.42999267578125,
-      "score": 64.2,
+      "score": 63.5,
       "grade": "C",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": 12.91,
@@ -52,7 +35,7 @@
       "stop_loss": 325.03,
       "stop_loss_pct": -5.4,
       "risk_reward_ratio": 3.02,
-      "rank": 3
+      "rank": 2
     },
     {
       "ticker": "KLAC",
@@ -69,23 +52,40 @@
       "stop_loss": 1697.54,
       "stop_loss_pct": -2.3,
       "risk_reward_ratio": 4.33,
+      "rank": 3
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "price": 82.22000122070312,
+      "score": 63.2,
+      "grade": "C",
+      "signal": "FVG 지지 구간 도달",
+      "weekly_pct": 2.21,
+      "trend": "상승장",
+      "rsi": 58.3,
+      "target_price": 87.72,
+      "target_pct": 6.7,
+      "stop_loss": 80.51,
+      "stop_loss_pct": -2.1,
+      "risk_reward_ratio": 3.21,
       "rank": 4
     },
     {
-      "ticker": "INTU",
-      "name": "Intuit Inc.",
-      "price": 350.94000244140625,
-      "score": 63.0,
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "price": 263.6600036621094,
+      "score": 63.2,
       "grade": "C",
-      "signal": "강력 바닥 (과매도)",
-      "weekly_pct": -15.65,
-      "trend": "강한 하락장",
-      "rsi": 25.9,
-      "target_price": 488.19,
-      "target_pct": 39.1,
-      "stop_loss": 347.92,
-      "stop_loss_pct": -0.9,
-      "risk_reward_ratio": 45.52,
+      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
+      "weekly_pct": 19.49,
+      "trend": "상승장",
+      "rsi": 66.9,
+      "target_price": 294.96,
+      "target_pct": 11.9,
+      "stop_loss": 254.14,
+      "stop_loss_pct": -3.6,
+      "risk_reward_ratio": 3.29,
       "rank": 5
     }
   ]

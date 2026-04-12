@@ -1,13 +1,13 @@
 {
   "index_name": "Russell 2000",
-  "analysis_time": "2026-04-10T22:47:45.357488",
+  "analysis_time": "2026-04-12T22:45:47.304475",
   "total_analyzed": 200,
   "top_results": [
     {
       "ticker": "PFS",
       "name": "Provident Financial Services, I",
       "price": 22.049999237060547,
-      "score": 66.1,
+      "score": 66.0,
       "grade": "B",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": 2.65,
@@ -64,11 +64,11 @@
       "weekly_pct": 1.88,
       "trend": "강한 상승장",
       "rsi": 63.0,
-      "target_price": 100.24,
+      "target_price": 100.26,
       "target_pct": 7.0,
       "stop_loss": 91.29,
       "stop_loss_pct": -2.6,
-      "risk_reward_ratio": 2.72,
+      "risk_reward_ratio": 2.73,
       "rank": 4
     },
     {

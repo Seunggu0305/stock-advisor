@@ -1,42 +1,8 @@
 {
   "index_name": "S&P 500",
-  "analysis_time": "2026-04-10T22:40:16.518889",
+  "analysis_time": "2026-04-12T22:38:00.447240",
   "total_analyzed": 503,
   "top_results": [
-    {
-      "ticker": "RCL",
-      "name": "Royal Caribbean Cruises Ltd.",
-      "price": 276.94000244140625,
-      "score": 69.0,
-      "grade": "B",
-      "signal": "변동성 폭발 임박 (BB 스퀴즈)",
-      "weekly_pct": 0.45,
-      "trend": "하락장",
-      "rsi": 48.5,
-      "target_price": 322.77,
-      "target_pct": 16.5,
-      "stop_loss": 262.99,
-      "stop_loss_pct": -5.0,
-      "risk_reward_ratio": 3.28,
-      "rank": 1
-    },
-    {
-      "ticker": "WYNN",
-      "name": "Wynn Resorts, Limited",
-      "price": 104.0,
-      "score": 67.7,
-      "grade": "B",
-      "signal": "변동성 폭발 임박 (상승)",
-      "weekly_pct": 1.26,
-      "trend": "보합",
-      "rsi": 51.7,
-      "target_price": 116.25,
-      "target_pct": 11.8,
-      "stop_loss": 101.57,
-      "stop_loss_pct": -2.3,
-      "risk_reward_ratio": 5.05,
-      "rank": 2
-    },
     {
       "ticker": "AKAM",
       "name": "Akamai Technologies, Inc.",
@@ -52,7 +18,7 @@
       "stop_loss": 89.0,
       "stop_loss_pct": -2.6,
       "risk_reward_ratio": 7.12,
-      "rank": 3
+      "rank": 1
     },
     {
       "ticker": "TROW",
@@ -69,7 +35,7 @@
       "stop_loss": 90.35,
       "stop_loss_pct": -1.2,
       "risk_reward_ratio": 4.72,
-      "rank": 4
+      "rank": 2
     },
     {
       "ticker": "LH",
@@ -86,6 +52,40 @@
       "stop_loss": 260.87,
       "stop_loss_pct": -0.0,
       "risk_reward_ratio": 272.16,
+      "rank": 3
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "price": 115.7300033569336,
+      "score": 64.8,
+      "grade": "C",
+      "signal": "FVG 지지 구간 도달",
+      "weekly_pct": -6.98,
+      "trend": "하락장",
+      "rsi": 33.9,
+      "target_price": 135.67,
+      "target_pct": 17.2,
+      "stop_loss": 111.32,
+      "stop_loss_pct": -3.8,
+      "risk_reward_ratio": 4.52,
+      "rank": 4
+    },
+    {
+      "ticker": "FITB",
+      "name": "Fifth Third Bancorp",
+      "price": 49.310001373291016,
+      "score": 64.4,
+      "grade": "C",
+      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
+      "weekly_pct": 3.68,
+      "trend": "상승장",
+      "rsi": 61.5,
+      "target_price": 52.62,
+      "target_pct": 6.7,
+      "stop_loss": 48.11,
+      "stop_loss_pct": -2.4,
+      "risk_reward_ratio": 2.76,
       "rank": 5
     }
   ]
