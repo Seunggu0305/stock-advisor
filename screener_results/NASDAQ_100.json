@@ -1,13 +1,13 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-04-17T22:32:47.263888",
+  "analysis_time": "2026-04-19T22:29:51.444310",
   "total_analyzed": 101,
   "top_results": [
     {
       "ticker": "FTNT",
       "name": "Fortinet, Inc.",
       "price": 81.83999633789062,
-      "score": 64.2,
+      "score": 63.7,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": 3.94,
@@ -21,44 +21,10 @@
       "rank": 1
     },
     {
-      "ticker": "ROP",
-      "name": "Roper Technologies, Inc.",
-      "price": 362.44000244140625,
-      "score": 63.7,
-      "grade": "C",
-      "signal": "변동성 폭발 임박 (BB 스퀴즈)",
-      "weekly_pct": 1.71,
-      "trend": "상승장",
-      "rsi": 57.2,
-      "target_price": 414.41,
-      "target_pct": 14.3,
-      "stop_loss": 344.53,
-      "stop_loss_pct": -4.9,
-      "risk_reward_ratio": 2.9,
-      "rank": 2
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "price": 33.45000076293945,
-      "score": 63.5,
-      "grade": "C",
-      "signal": "변동성 폭발 임박 (상승)",
-      "weekly_pct": 0.6,
-      "trend": "하락장",
-      "rsi": 45.4,
-      "target_price": 38.57,
-      "target_pct": 15.3,
-      "stop_loss": 32.85,
-      "stop_loss_pct": -1.8,
-      "risk_reward_ratio": 8.53,
-      "rank": 3
-    },
-    {
       "ticker": "CHTR",
       "name": "Charter Communications, Inc.",
       "price": 236.6199951171875,
-      "score": 62.4,
+      "score": 63.5,
       "grade": "C",
       "signal": "FVG 지지 구간 도달",
       "weekly_pct": 4.56,
@@ -69,7 +35,24 @@
       "stop_loss": 229.55,
       "stop_loss_pct": -3.0,
       "risk_reward_ratio": 6.55,
-      "rank": 4
+      "rank": 2
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "price": 362.44000244140625,
+      "score": 63.0,
+      "grade": "C",
+      "signal": "변동성 폭발 임박 (BB 스퀴즈)",
+      "weekly_pct": 1.71,
+      "trend": "상승장",
+      "rsi": 57.2,
+      "target_price": 414.41,
+      "target_pct": 14.3,
+      "stop_loss": 344.53,
+      "stop_loss_pct": -4.9,
+      "risk_reward_ratio": 2.9,
+      "rank": 3
     },
     {
       "ticker": "META",
@@ -86,6 +69,23 @@
       "stop_loss": 677.08,
       "stop_loss_pct": -1.7,
       "risk_reward_ratio": 4.08,
+      "rank": 4
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "price": 422.7900085449219,
+      "score": 61.8,
+      "grade": "C",
+      "signal": "FVG 지지 구간 도달",
+      "weekly_pct": 10.0,
+      "trend": "상승장",
+      "rsi": 71.7,
+      "target_price": 466.13,
+      "target_pct": 10.2,
+      "stop_loss": 412.28,
+      "stop_loss_pct": -2.5,
+      "risk_reward_ratio": 4.12,
       "rank": 5
     }
   ]
