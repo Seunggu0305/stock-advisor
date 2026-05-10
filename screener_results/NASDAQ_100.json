@@ -1,13 +1,13 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-05-08T22:49:58.039858",
+  "analysis_time": "2026-05-10T22:40:15.731673",
   "total_analyzed": 101,
   "top_results": [
     {
       "ticker": "CTSH",
       "name": "Cognizant Technology Solutions ",
       "price": 51.68000030517578,
-      "score": 66.7,
+      "score": 66.9,
       "grade": "B",
       "signal": "강력 바닥 (과매도 + 강세 다이버전스)",
       "weekly_pct": -0.35,
@@ -24,7 +24,7 @@
       "ticker": "CSGP",
       "name": "CoStar Group, Inc.",
       "price": 32.77000045776367,
-      "score": 65.2,
+      "score": 65.5,
       "grade": "B",
       "signal": "강력 바닥 (과매도 + 강세 다이버전스)",
       "weekly_pct": -7.38,
@@ -41,7 +41,7 @@
       "ticker": "CHTR",
       "name": "Charter Communications, Inc.",
       "price": 154.86000061035156,
-      "score": 64.4,
+      "score": 64.6,
       "grade": "C",
       "signal": "강력 바닥 (과매도)",
       "weekly_pct": -6.34,
@@ -55,27 +55,10 @@
       "rank": 3
     },
     {
-      "ticker": "ADSK",
-      "name": "Autodesk, Inc.",
-      "price": 244.5,
-      "score": 64.3,
-      "grade": "C",
-      "signal": "FVG 지지 구간 도달",
-      "weekly_pct": -1.23,
-      "trend": "상승장",
-      "rsi": 52.6,
-      "target_price": 269.88,
-      "target_pct": 10.4,
-      "stop_loss": 237.9,
-      "stop_loss_pct": -2.7,
-      "risk_reward_ratio": 3.85,
-      "rank": 4
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "price": 215.1999969482422,
-      "score": 63.4,
+      "score": 63.6,
       "grade": "C",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": 8.42,
@@ -86,6 +69,23 @@
       "stop_loss": 208.63,
       "stop_loss_pct": -3.1,
       "risk_reward_ratio": 2.52,
+      "rank": 4
+    },
+    {
+      "ticker": "INSM",
+      "name": "Insmed Incorporated",
+      "price": 101.3499984741211,
+      "score": 63.5,
+      "grade": "C",
+      "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
+      "weekly_pct": -27.61,
+      "trend": "강한 하락장",
+      "rsi": 21.3,
+      "target_price": 135.68,
+      "target_pct": 33.9,
+      "stop_loss": 95.03,
+      "stop_loss_pct": -6.2,
+      "risk_reward_ratio": 5.43,
       "rank": 5
     }
   ]
