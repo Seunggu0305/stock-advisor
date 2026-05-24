@@ -1,6 +1,6 @@
 {
   "index_name": "Russell 2000",
-  "analysis_time": "2026-05-22T23:12:05.684147",
+  "analysis_time": "2026-05-24T23:06:40.837670",
   "total_analyzed": 200,
   "top_results": [
     {
@@ -41,17 +41,17 @@
       "ticker": "PLGO",
       "name": "Pelagos Insurance Capital Limit",
       "price": 22.790000915527344,
-      "score": 64.2,
+      "score": 64.1,
       "grade": "C",
       "signal": "FVG 지지 구간 도달",
       "weekly_pct": -3.64,
       "trend": "강한 상승장",
       "rsi": 62.4,
-      "target_price": 24.46,
-      "target_pct": 7.3,
+      "target_price": 24.49,
+      "target_pct": 7.4,
       "stop_loss": 22.27,
       "stop_loss_pct": -2.3,
-      "risk_reward_ratio": 3.19,
+      "risk_reward_ratio": 3.24,
       "rank": 3
     },
     {
