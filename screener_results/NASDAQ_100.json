@@ -1,30 +1,13 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-06-05T23:01:12.577504",
+  "analysis_time": "2026-06-07T22:58:27.971228",
   "total_analyzed": 101,
   "top_results": [
-    {
-      "ticker": "CHTR",
-      "name": "Charter Communications, Inc.",
-      "price": 132.1199951171875,
-      "score": 66.3,
-      "grade": "B",
-      "signal": "매수 고려",
-      "weekly_pct": -7.35,
-      "trend": "강한 하락장",
-      "rsi": 30.3,
-      "target_price": 182.86,
-      "target_pct": 38.4,
-      "stop_loss": 116.58,
-      "stop_loss_pct": -11.8,
-      "risk_reward_ratio": 3.26,
-      "rank": 1
-    },
     {
       "ticker": "LRCX",
       "name": "Lam Research Corporation",
       "price": 303.2799987792969,
-      "score": 65.2,
+      "score": 65.9,
       "grade": "B",
       "signal": "FVG 지지 구간 도달",
       "weekly_pct": -4.36,
@@ -35,13 +18,13 @@
       "stop_loss": 297.12,
       "stop_loss_pct": -2.0,
       "risk_reward_ratio": 4.87,
-      "rank": 2
+      "rank": 1
     },
     {
       "ticker": "ALNY",
       "name": "Alnylam Pharmaceuticals, Inc.",
       "price": 303.04998779296875,
-      "score": 64.9,
+      "score": 64.8,
       "grade": "C",
       "signal": "변동성 폭발 임박 (BB 스퀴즈)",
       "weekly_pct": 2.51,
@@ -52,7 +35,7 @@
       "stop_loss": 299.62,
       "stop_loss_pct": -1.1,
       "risk_reward_ratio": 15.38,
-      "rank": 3
+      "rank": 2
     },
     {
       "ticker": "EA",
@@ -69,23 +52,40 @@
       "stop_loss": 202.63,
       "stop_loss_pct": -0.2,
       "risk_reward_ratio": 3.64,
+      "rank": 3
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "price": 864.010009765625,
+      "score": 63.8,
+      "grade": "C",
+      "signal": "중립 관망",
+      "weekly_pct": -16.56,
+      "trend": "강한 상승장",
+      "rsi": 55.2,
+      "target_price": 995.19,
+      "target_pct": 15.2,
+      "stop_loss": 803.89,
+      "stop_loss_pct": -7.0,
+      "risk_reward_ratio": 2.18,
       "rank": 4
     },
     {
-      "ticker": "DASH",
-      "name": "DoorDash, Inc.",
-      "price": 156.8000030517578,
-      "score": 63.0,
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "price": 263.4700012207031,
+      "score": 63.7,
       "grade": "C",
-      "signal": "중립 관망",
-      "weekly_pct": -4.84,
-      "trend": "하락장",
-      "rsi": 46.4,
-      "target_price": 206.44,
-      "target_pct": 31.7,
-      "stop_loss": 152.01,
-      "stop_loss_pct": -3.1,
-      "risk_reward_ratio": 10.36,
+      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
+      "weekly_pct": 20.07,
+      "trend": "강한 상승장",
+      "rsi": 65.0,
+      "target_price": 311.95,
+      "target_pct": 18.4,
+      "stop_loss": 247.38,
+      "stop_loss_pct": -6.1,
+      "risk_reward_ratio": 3.01,
       "rank": 5
     }
   ]
