@@ -1,13 +1,13 @@
 {
   "index_name": "S&P 500",
-  "analysis_time": "2026-07-02T23:10:14.591936",
+  "analysis_time": "2026-07-03T23:09:19.344678",
   "total_analyzed": 503,
   "top_results": [
     {
       "ticker": "BG",
       "name": "Bunge Limited",
       "price": 106.45999908447266,
-      "score": 68.3,
+      "score": 67.8,
       "grade": "B",
       "signal": "극단적 과매도 (평균 회귀 기대)",
       "weekly_pct": -3.69,
@@ -24,7 +24,7 @@
       "ticker": "CCI",
       "name": "Crown Castle Inc.",
       "price": 76.5999984741211,
-      "score": 68.2,
+      "score": 67.6,
       "grade": "B",
       "signal": "극단적 과매도 (평균 회귀 기대)",
       "weekly_pct": -7.29,
@@ -38,27 +38,10 @@
       "rank": 2
     },
     {
-      "ticker": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "price": 84.66000366210938,
-      "score": 65.0,
-      "grade": "B",
-      "signal": "FVG 지지 구간 도달",
-      "weekly_pct": 7.76,
-      "trend": "하락장",
-      "rsi": 50.5,
-      "target_price": 91.48,
-      "target_pct": 8.1,
-      "stop_loss": 83.94,
-      "stop_loss_pct": -0.9,
-      "risk_reward_ratio": 9.46,
-      "rank": 3
-    },
-    {
       "ticker": "LLY",
       "name": "Eli Lilly and Company",
       "price": 1213.9100341796875,
-      "score": 64.7,
+      "score": 64.5,
       "grade": "C",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": 0.48,
@@ -69,13 +52,13 @@
       "stop_loss": 1179.08,
       "stop_loss_pct": -2.9,
       "risk_reward_ratio": 2.83,
-      "rank": 4
+      "rank": 3
     },
     {
       "ticker": "WFC",
       "name": "Wells Fargo & Company",
       "price": 85.51000213623047,
-      "score": 64.7,
+      "score": 64.1,
       "grade": "C",
       "signal": "FVG 지지 구간 도달",
       "weekly_pct": 1.97,
@@ -85,7 +68,24 @@
       "target_pct": 3.0,
       "stop_loss": 85.12,
       "stop_loss_pct": -0.5,
-      "risk_reward_ratio": 6.65,
+      "risk_reward_ratio": 6.66,
+      "rank": 4
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc. Common St",
+      "price": 184.55999755859375,
+      "score": 63.8,
+      "grade": "C",
+      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
+      "weekly_pct": 1.71,
+      "trend": "상승장",
+      "rsi": 63.2,
+      "target_price": 201.74,
+      "target_pct": 9.3,
+      "stop_loss": 181.62,
+      "stop_loss_pct": -1.6,
+      "risk_reward_ratio": 5.85,
       "rank": 5
     }
   ]
