@@ -1,6 +1,6 @@
 {
   "index_name": "Russell 2000",
-  "analysis_time": "2026-07-03T23:17:57.978225",
+  "analysis_time": "2026-07-05T23:12:13.828907",
   "total_analyzed": 200,
   "top_results": [
     {
@@ -21,6 +21,23 @@
       "rank": 1
     },
     {
+      "ticker": "BPRN",
+      "name": "Princeton Bancorp, Inc.",
+      "price": 38.97999954223633,
+      "score": 62.6,
+      "grade": "C",
+      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
+      "weekly_pct": 2.85,
+      "trend": "상승장",
+      "rsi": 66.7,
+      "target_price": 40.87,
+      "target_pct": 4.9,
+      "stop_loss": 38.1,
+      "stop_loss_pct": -2.3,
+      "risk_reward_ratio": 2.16,
+      "rank": 2
+    },
+    {
       "ticker": "TREE",
       "name": "LendingTree, Inc.",
       "price": 45.0,
@@ -35,23 +52,6 @@
       "stop_loss": 41.34,
       "stop_loss_pct": -8.1,
       "risk_reward_ratio": 2.14,
-      "rank": 2
-    },
-    {
-      "ticker": "BPRN",
-      "name": "Princeton Bancorp, Inc.",
-      "price": 38.97999954223633,
-      "score": 62.3,
-      "grade": "C",
-      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
-      "weekly_pct": 2.85,
-      "trend": "상승장",
-      "rsi": 66.7,
-      "target_price": 40.87,
-      "target_pct": 4.9,
-      "stop_loss": 38.1,
-      "stop_loss_pct": -2.3,
-      "risk_reward_ratio": 2.16,
       "rank": 3
     },
     {
@@ -72,20 +72,20 @@
       "rank": 4
     },
     {
-      "ticker": "FOR",
-      "name": "Forestar Group Inc",
-      "price": 30.799999237060547,
-      "score": 62.0,
+      "ticker": "ARDT",
+      "name": "Ardent Health, Inc.",
+      "price": 10.760000228881836,
+      "score": 61.9,
       "grade": "C",
-      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
-      "weekly_pct": -3.57,
-      "trend": "강한 상승장",
-      "rsi": 61.1,
-      "target_price": 33.15,
-      "target_pct": 7.6,
-      "stop_loss": 30.13,
-      "stop_loss_pct": -2.2,
-      "risk_reward_ratio": 3.53,
+      "signal": "극단적 과매수 (하락 회귀 주의)",
+      "weekly_pct": 10.59,
+      "trend": "상승장",
+      "rsi": 68.1,
+      "target_price": 13.18,
+      "target_pct": 22.5,
+      "stop_loss": 10.1,
+      "stop_loss_pct": -6.2,
+      "risk_reward_ratio": 3.64,
       "rank": 5
     }
   ]
