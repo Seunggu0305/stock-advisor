@@ -1,16 +1,16 @@
 {
   "index_name": "S&P 500",
-  "analysis_time": "2026-07-10T23:01:41.407426",
+  "analysis_time": "2026-07-12T22:52:27.420228",
   "total_analyzed": 503,
   "top_results": [
     {
       "ticker": "CPRT",
       "name": "Copart, Inc.",
-      "price": 27.514999389648438,
+      "price": 27.520000457763672,
       "score": 67.6,
       "grade": "B",
       "signal": "극단적 과매도 (평균 회귀 기대)",
-      "weekly_pct": -5.9,
+      "weekly_pct": -5.88,
       "trend": "하락장",
       "rsi": 34.6,
       "target_price": 34.55,
@@ -24,7 +24,7 @@
       "ticker": "JBL",
       "name": "Jabil Inc.",
       "price": 330.2900085449219,
-      "score": 67.4,
+      "score": 67.2,
       "grade": "B",
       "signal": "매수 고려",
       "weekly_pct": -2.34,
@@ -36,6 +36,23 @@
       "stop_loss_pct": -2.5,
       "risk_reward_ratio": 6.05,
       "rank": 2
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "price": 460.7200012207031,
+      "score": 65.9,
+      "grade": "B",
+      "signal": "FVG 지지 구간 도달",
+      "weekly_pct": 6.2,
+      "trend": "보합",
+      "rsi": 47.7,
+      "target_price": 552.05,
+      "target_pct": 19.8,
+      "stop_loss": 450.61,
+      "stop_loss_pct": -2.2,
+      "risk_reward_ratio": 9.04,
+      "rank": 3
     },
     {
       "ticker": "BLK",
@@ -52,23 +69,6 @@
       "stop_loss": 1009.4,
       "stop_loss_pct": -2.6,
       "risk_reward_ratio": 2.55,
-      "rank": 3
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena Corporation",
-      "price": 460.7200012207031,
-      "score": 64.8,
-      "grade": "C",
-      "signal": "FVG 지지 구간 도달",
-      "weekly_pct": 6.2,
-      "trend": "보합",
-      "rsi": 47.7,
-      "target_price": 552.05,
-      "target_pct": 19.8,
-      "stop_loss": 450.61,
-      "stop_loss_pct": -2.2,
-      "risk_reward_ratio": 9.04,
       "rank": 4
     },
     {

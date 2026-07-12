@@ -1,6 +1,6 @@
 {
   "index_name": "Russell 2000",
-  "analysis_time": "2026-07-10T23:08:04.414736",
+  "analysis_time": "2026-07-12T23:02:11.346078",
   "total_analyzed": 200,
   "top_results": [
     {
@@ -75,7 +75,7 @@
       "ticker": "WLY",
       "name": "John Wiley & Sons, Inc.",
       "price": 50.310001373291016,
-      "score": 63.8,
+      "score": 63.7,
       "grade": "C",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": -3.57,
