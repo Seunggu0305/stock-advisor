@@ -1,6 +1,6 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-07-17T22:43:58.976281",
+  "analysis_time": "2026-07-19T22:46:42.970443",
   "total_analyzed": 103,
   "top_results": [
     {
@@ -40,11 +40,11 @@
     {
       "ticker": "MMAR",
       "name": "Pacer Swan SOS Moderate March E",
-      "price": 32.41999816894531,
-      "score": 51.4,
+      "price": 32.29999923706055,
+      "score": 50.3,
       "grade": "C",
-      "signal": "FVG 지지 구간 도달",
-      "weekly_pct": -0.18,
+      "signal": "중립 관망",
+      "weekly_pct": -0.22,
       "trend": "보합",
       "rsi": 50.0,
       "target_price": 0.0,
