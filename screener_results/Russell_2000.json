@@ -1,13 +1,13 @@
 {
   "index_name": "Russell 2000",
-  "analysis_time": "2026-08-09T22:31:03.614945",
+  "analysis_time": "2026-08-10T22:35:40.523566",
   "total_analyzed": 200,
   "top_results": [
     {
-      "ticker": "MMATV",
-      "name": "MMATV",
+      "ticker": "AAPPS",
+      "name": "AAPPS",
       "price": 0.0,
-      "score": 51.5,
+      "score": 50.1,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": 0.0,
@@ -21,10 +21,10 @@
       "rank": 1
     },
     {
-      "ticker": "FFRD",
-      "name": "FFRD",
+      "ticker": "VVREX",
+      "name": "VVREX",
       "price": 0.0,
-      "score": 51.5,
+      "score": 50.1,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": 0.0,
@@ -38,10 +38,10 @@
       "rank": 2
     },
     {
-      "ticker": "AAVNT",
-      "name": "AAVNT",
+      "ticker": "FFBRX",
+      "name": "FFBRX",
       "price": 0.0,
-      "score": 51.5,
+      "score": 50.1,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": 0.0,
@@ -55,10 +55,10 @@
       "rank": 3
     },
     {
-      "ticker": "KKALU",
-      "name": "KKALU",
+      "ticker": "OOABI",
+      "name": "OOABI",
       "price": 0.0,
-      "score": 51.5,
+      "score": 50.1,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": 0.0,
@@ -72,10 +72,10 @@
       "rank": 4
     },
     {
-      "ticker": "AATNI",
-      "name": "AATNI",
+      "ticker": "RREPL",
+      "name": "RREPL",
       "price": 0.0,
-      "score": 51.5,
+      "score": 50.1,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": 0.0,
