@@ -1,13 +1,13 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-09-18T23:48:41.464294",
+  "analysis_time": "2026-09-20T23:46:26.190097",
   "total_analyzed": 101,
   "top_results": [
     {
       "ticker": "ALAB",
       "name": "Astera Labs, Inc.",
       "price": 303.25,
-      "score": 68.5,
+      "score": 68.3,
       "grade": "B",
       "signal": "변동성 폭발 임박 (BB 스퀴즈)",
       "weekly_pct": 17.98,
@@ -19,23 +19,6 @@
       "stop_loss_pct": -5.2,
       "risk_reward_ratio": 6.48,
       "rank": 1
-    },
-    {
-      "ticker": "BKNG",
-      "name": "Booking Holdings Inc. Common St",
-      "price": 167.89999389648438,
-      "score": 68.5,
-      "grade": "B",
-      "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
-      "weekly_pct": -4.25,
-      "trend": "하락장",
-      "rsi": 27.6,
-      "target_price": 194.83,
-      "target_pct": 16.0,
-      "stop_loss": 160.42,
-      "stop_loss_pct": -4.5,
-      "risk_reward_ratio": 3.6,
-      "rank": 2
     },
     {
       "ticker": "CMCSA",
@@ -52,7 +35,7 @@
       "stop_loss": 21.83,
       "stop_loss_pct": -4.0,
       "risk_reward_ratio": 3.39,
-      "rank": 3
+      "rank": 2
     },
     {
       "ticker": "MU",
@@ -66,26 +49,43 @@
       "rsi": 58.3,
       "target_price": 1118.39,
       "target_pct": 10.1,
-      "stop_loss": 958.36,
+      "stop_loss": 958.27,
       "stop_loss_pct": -5.7,
-      "risk_reward_ratio": 1.79,
+      "risk_reward_ratio": 1.78,
+      "rank": 3
+    },
+    {
+      "ticker": "PCAR",
+      "name": "PACCAR Inc.",
+      "price": 116.05999755859375,
+      "score": 65.3,
+      "grade": "B",
+      "signal": "강력 바닥 (과매도 + 강세 다이버전스)",
+      "weekly_pct": -5.53,
+      "trend": "하락장",
+      "rsi": 26.4,
+      "target_price": 128.51,
+      "target_pct": 10.7,
+      "stop_loss": 115.53,
+      "stop_loss_pct": -0.5,
+      "risk_reward_ratio": 23.56,
       "rank": 4
     },
     {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "price": 441.3599853515625,
-      "score": 64.7,
-      "grade": "C",
-      "signal": "변동성 폭발 임박 (BB 스퀴즈)",
-      "weekly_pct": 3.38,
+      "ticker": "CSX",
+      "name": "CSX Corporation",
+      "price": 47.099998474121094,
+      "score": 65.0,
+      "grade": "B",
+      "signal": "극단적 과매도 (평균 회귀 기대)",
+      "weekly_pct": -3.7,
       "trend": "하락장",
-      "rsi": 45.8,
-      "target_price": 533.05,
-      "target_pct": 20.8,
-      "stop_loss": 433.75,
-      "stop_loss_pct": -1.7,
-      "risk_reward_ratio": 12.05,
+      "rsi": 30.5,
+      "target_price": 50.94,
+      "target_pct": 8.1,
+      "stop_loss": 45.18,
+      "stop_loss_pct": -4.1,
+      "risk_reward_ratio": 2.0,
       "rank": 5
     }
   ]
