@@ -1,13 +1,13 @@
 {
   "index_name": "NASDAQ 100",
-  "analysis_time": "2026-10-07T01:11:34.520220",
+  "analysis_time": "2026-10-08T01:30:09.984157",
   "total_analyzed": 101,
   "top_results": [
     {
       "ticker": "MSFT",
       "name": "Microsoft Corporation",
       "price": 529.2999877929688,
-      "score": 65.2,
+      "score": 65.9,
       "grade": "B",
       "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
       "weekly_pct": 3.2,
@@ -21,6 +21,23 @@
       "rank": 1
     },
     {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "price": 1660.4599609375,
+      "score": 64.5,
+      "grade": "C",
+      "signal": "중립 관망",
+      "weekly_pct": -4.57,
+      "trend": "상승장",
+      "rsi": 48.7,
+      "target_price": 1945.06,
+      "target_pct": 17.1,
+      "stop_loss": 1583.68,
+      "stop_loss_pct": -4.6,
+      "risk_reward_ratio": 3.71,
+      "rank": 2
+    },
+    {
       "ticker": "KDP",
       "name": "Keurig Dr Pepper Inc.",
       "price": 31.1299991607666,
@@ -31,17 +48,34 @@
       "trend": "보합",
       "rsi": 50.2,
       "target_price": 32.83,
-      "target_pct": 5.4,
+      "target_pct": 5.5,
       "stop_loss": 30.3,
       "stop_loss_pct": -2.7,
       "risk_reward_ratio": 2.05,
-      "rank": 2
+      "rank": 3
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc. Common St",
+      "price": 157.6300048828125,
+      "score": 63.8,
+      "grade": "C",
+      "signal": "강력 바닥 (과매도)",
+      "weekly_pct": -3.24,
+      "trend": "하락장",
+      "rsi": 29.3,
+      "target_price": 191.62,
+      "target_pct": 21.6,
+      "stop_loss": 149.54,
+      "stop_loss_pct": -5.1,
+      "risk_reward_ratio": 4.2,
+      "rank": 4
     },
     {
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "price": 1045.56005859375,
-      "score": 63.7,
+      "score": 63.8,
       "grade": "C",
       "signal": "중립 관망",
       "weekly_pct": -1.84,
@@ -52,40 +86,6 @@
       "stop_loss": 1010.07,
       "stop_loss_pct": -3.4,
       "risk_reward_ratio": 3.39,
-      "rank": 3
-    },
-    {
-      "ticker": "PDD",
-      "name": "PDD Holdings Inc.",
-      "price": 77.9000015258789,
-      "score": 63.3,
-      "grade": "C",
-      "signal": "중립 관망",
-      "weekly_pct": 0.52,
-      "trend": "하락장",
-      "rsi": 43.8,
-      "target_price": 91.4,
-      "target_pct": 17.3,
-      "stop_loss": 77.25,
-      "stop_loss_pct": -0.8,
-      "risk_reward_ratio": 20.76,
-      "rank": 4
-    },
-    {
-      "ticker": "CPRT",
-      "name": "Copart, Inc.",
-      "price": 26.81999969482422,
-      "score": 63.2,
-      "grade": "C",
-      "signal": "중립 관망",
-      "weekly_pct": -1.69,
-      "trend": "강한 하락장",
-      "rsi": 31.3,
-      "target_price": 31.61,
-      "target_pct": 17.8,
-      "stop_loss": 26.81,
-      "stop_loss_pct": -0.0,
-      "risk_reward_ratio": 478.55,
       "rank": 5
     }
   ]
