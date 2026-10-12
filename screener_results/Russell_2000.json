@@ -1,6 +1,6 @@
 {
   "index_name": "Russell 2000",
-  "analysis_time": "2026-10-10T01:39:51.726902",
+  "analysis_time": "2026-10-12T01:06:04.617337",
   "total_analyzed": 70,
   "top_results": [
     {
@@ -38,40 +38,6 @@
       "rank": 2
     },
     {
-      "ticker": "WSFS",
-      "name": "WSFS Financial Corporation",
-      "price": 75.38999938964844,
-      "score": 67.1,
-      "grade": "B",
-      "signal": "매수 고려",
-      "weekly_pct": -2.52,
-      "trend": "하락장",
-      "rsi": 39.1,
-      "target_price": 81.08,
-      "target_pct": 7.5,
-      "stop_loss": 74.6,
-      "stop_loss_pct": -1.1,
-      "risk_reward_ratio": 7.17,
-      "rank": 3
-    },
-    {
-      "ticker": "SFBS",
-      "name": "ServisFirst Bancshares, Inc.",
-      "price": 38.40999984741211,
-      "score": 66.0,
-      "grade": "B",
-      "signal": "강력 바닥 (과매도 + RSI 강세 다이버전스)",
-      "weekly_pct": -2.78,
-      "trend": "하락장",
-      "rsi": 29.5,
-      "target_price": 41.82,
-      "target_pct": 8.9,
-      "stop_loss": 37.48,
-      "stop_loss_pct": -2.4,
-      "risk_reward_ratio": 3.65,
-      "rank": 4
-    },
-    {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding ",
       "price": 216.5500030517578,
@@ -86,6 +52,40 @@
       "stop_loss": 207.67,
       "stop_loss_pct": -4.1,
       "risk_reward_ratio": 4.49,
+      "rank": 3
+    },
+    {
+      "ticker": "IIPR",
+      "name": "Innovative Industrial Propertie",
+      "price": 51.83000183105469,
+      "score": 65.8,
+      "grade": "B",
+      "signal": "매수 고려",
+      "weekly_pct": 2.55,
+      "trend": "하락장",
+      "rsi": 41.4,
+      "target_price": 56.73,
+      "target_pct": 9.5,
+      "stop_loss": 49.4,
+      "stop_loss_pct": -4.7,
+      "risk_reward_ratio": 2.02,
+      "rank": 4
+    },
+    {
+      "ticker": "WSFS",
+      "name": "WSFS Financial Corporation",
+      "price": 75.38999938964844,
+      "score": 65.5,
+      "grade": "B",
+      "signal": "매수 고려",
+      "weekly_pct": -2.52,
+      "trend": "하락장",
+      "rsi": 39.1,
+      "target_price": 81.08,
+      "target_pct": 7.5,
+      "stop_loss": 74.6,
+      "stop_loss_pct": -1.1,
+      "risk_reward_ratio": 7.17,
       "rank": 5
     }
   ]
