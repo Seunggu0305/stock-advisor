@@ -1,7 +1,7 @@
 {
   "index_name": "S&P 500",
-  "analysis_time": "2026-11-14T02:04:49.630262",
-  "total_analyzed": 503,
+  "analysis_time": "2026-11-16T01:36:59.402015",
+  "total_analyzed": 487,
   "top_results": [
     {
       "ticker": "ALGN",
@@ -38,44 +38,10 @@
       "rank": 2
     },
     {
-      "ticker": "CDW",
-      "name": "CDW Corporation",
-      "price": 172.7899932861328,
-      "score": 63.6,
-      "grade": "C",
-      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
-      "weekly_pct": 10.06,
-      "trend": "강한 상승장",
-      "rsi": 63.1,
-      "target_price": 192.47,
-      "target_pct": 11.4,
-      "stop_loss": 167.35,
-      "stop_loss_pct": -3.1,
-      "risk_reward_ratio": 3.62,
-      "rank": 3
-    },
-    {
-      "ticker": "MRK",
-      "name": "Merck & Company, Inc.",
-      "price": 147.75999450683594,
-      "score": 63.4,
-      "grade": "C",
-      "signal": "변동성 폭발 임박 (BB 스퀴즈)",
-      "weekly_pct": -0.67,
-      "trend": "상승장",
-      "rsi": 52.6,
-      "target_price": 153.98,
-      "target_pct": 4.2,
-      "stop_loss": 144.7,
-      "stop_loss_pct": -2.1,
-      "risk_reward_ratio": 2.03,
-      "rank": 4
-    },
-    {
       "ticker": "MET",
       "name": "MetLife, Inc.",
       "price": 102.6500015258789,
-      "score": 63.2,
+      "score": 63.5,
       "grade": "C",
       "signal": "FVG 지지 구간 도달",
       "weekly_pct": 0.96,
@@ -86,6 +52,40 @@
       "stop_loss": 99.64,
       "stop_loss_pct": -2.9,
       "risk_reward_ratio": 2.01,
+      "rank": 3
+    },
+    {
+      "ticker": "BAC",
+      "name": "Bank of America Corporation",
+      "price": 51.02000045776367,
+      "score": 62.9,
+      "grade": "C",
+      "signal": "추세 전환 임박 (데드크로스 + 강세 다이버전스)",
+      "weekly_pct": 0.93,
+      "trend": "하락장",
+      "rsi": 46.0,
+      "target_price": 57.3,
+      "target_pct": 12.3,
+      "stop_loss": 50.5,
+      "stop_loss_pct": -1.0,
+      "risk_reward_ratio": 12.09,
+      "rank": 4
+    },
+    {
+      "ticker": "AES",
+      "name": "The AES Corporation",
+      "price": 14.90999984741211,
+      "score": 62.8,
+      "grade": "C",
+      "signal": "강세 돌파 (추세 + 모멘텀 + 거래량 정렬)",
+      "weekly_pct": 0.07,
+      "trend": "강한 상승장",
+      "rsi": 63.1,
+      "target_price": 15.77,
+      "target_pct": 5.8,
+      "stop_loss": 14.81,
+      "stop_loss_pct": -0.7,
+      "risk_reward_ratio": 8.78,
       "rank": 5
     }
   ]
